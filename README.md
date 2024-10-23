@@ -23,10 +23,7 @@
 <br>
 
 ## 구현 화면
-데스크탑
 ![desktop](https://github.com/user-attachments/assets/46ec2948-fe71-4a6f-a125-4025c64e0ff2)
-<br>
-
 ![tablet](https://github.com/user-attachments/assets/c84430e4-6f10-423d-afcc-849760652d35)
 
 
