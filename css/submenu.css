@@ -1,0 +1,65 @@
+.main_menu .menu_item{
+  position: relative;
+  height: 106px;
+  line-height: 106px;
+}
+
+.submenu{ 
+  display: none;
+  position: absolute;
+  width: inherit;
+  background-color: white;
+  left: 0; top: 106px;
+  z-index: 999;
+  transition: .3s ease;
+}
+.submenu_content{
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.23);
+}
+.sub_menu_heading_box{
+  padding-top: 30px;
+  width: 615px;
+  border-radius: 0 0 100px 0;
+  background-color: #F1F3F6;
+  position: relative;
+  display: block;
+}
+.sub_menu_heading{
+  width: 295px;
+  color: #002459;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-left: 297px;
+}
+.submenu ul{
+  width: 860px;
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 44px;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.submenu ul li{
+  width: 200px; height: 50px;
+  line-height: 48px;
+  border: 1px solid #A7A9AC;
+  border-radius: var(--bdradius);
+  padding: 0 16px 0 16px;
+  align-items: center;
+  transition: .3s;
+  z-index: 999;
+}
+.submenu ul li a{font-size: 16px; transition: .3s;}
+#enterprise ul li:nth-child(2){width: 208px;}
+#manpower ul li:nth-child(2){width: 234px;}
+#data ul li:nth-child(1){width: 293px;}
+
+.submenu li:hover , .submenu li:hover a{ 
+  border-color: #115596; 
+  color: #115596;
+}

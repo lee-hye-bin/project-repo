@@ -1,0 +1,74 @@
+.sns-inner{position: relative;}
+.sns-inner .heading-share{
+  display: flex;
+  justify-content: center;
+}
+.sns-inner .heading-share h3{
+  color: #002459; text-align: center;
+}
+
+/* 탭 */
+.sns_tab_menu{margin: 42px 0; text-align: center;}
+.sns_tab_menu .sns_tab{
+  border: none;
+  border-radius: 17px;
+  width: 109px; height: 34px;
+  border: 2px solid #002459;
+  background-color: #fff;
+  color: #002459;
+}
+
+/* slide */
+.sns_tab_content{
+  width: 1152px;
+  margin: auto;
+  display: none;
+}
+.sns_tab_content .swiper-container{overflow: hidden;}
+.sns_tab_content .swiper-wrapper{display: flex;}
+.news_img{
+  width: 273px; height: 273px;
+  border-radius: var(--bdradius);
+}
+#sns_tab3 .news_img{width: 375px;  height: 273px; object-fit:fill}
+
+.news_head{
+  width: 255px; height: 41px;
+  margin: 25px 9px 19px 9px;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  /* 두 줄 이상일 때 ellipsis 처리 */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 원하는 라인수 */
+  -webkit-box-orient: vertical;
+}
+.news_head:hover{text-decoration: underline;}
+.news_date{font-size: 16px; margin: 0 9px;}
+#sns_tab3 .news_head{
+  width: 350px;
+}
+/* controls */
+.sns_controls .prev, .sns_controls .next{
+  position: absolute; 
+  bottom: 35%;
+  width: 52px; height: 52px;
+  border: none;
+  border-radius: 100%;
+  background-color: white;
+  border: 1px solid #002459;
+  cursor: pointer;
+}
+.sns_controls .prev{left: 0;}
+.sns_controls .next{right: 0;}
+.sns_controls .prev i, .sns_controls .next i{color: #002459;}
+
+/* active */
+.sns_tab.active{
+  border: none;
+  background-color: #014A8F;
+  color: #fff;
+  font-weight: 600;
+}
+.sns_tab_content.active{display: block;}
