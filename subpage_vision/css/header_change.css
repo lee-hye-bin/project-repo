@@ -1,0 +1,26 @@
+/* 스크롤했을 때 바뀌는 요소 */
+/* 헤더 */
+#header.scroll{
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(2px);
+  color: #2c2c2c;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.23);
+}
+#header.scroll .main_menu ul li a, 
+#header.scroll .header_search a i, 
+#header.scroll .hamburger_menu i,
+#header.scroll .hamburger_menu_responsive i{color: #2c2c2c;}
+
+/* 내비게이션 글자 색 */
+#header.scroll .main_menu ul li a:hover{color: #6fa9dd;}
+
+/* 서브메뉴 호버 시 header 변경 */
+#header.mouseOn{
+  background-color: rgba(255, 255, 255, 1);
+}
+#header.mouseOn #logo_image{content: url(../images/logo_black.png);} /* 이미지 src 수정 */
+#header.mouseOn .main_menu ul li a, 
+#header.mouseOn .header_search a i, 
+#header.mouseOn .hamburger_menu i {color: #2c2c2c;}
+#header.mouseOn .hamburger_menu_responsive i {color: #2c2c2c;}
+#header.mouseOn .main_menu ul li:hover a{color: #6fa9dd;}
