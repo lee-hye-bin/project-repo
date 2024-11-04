@@ -1,0 +1,22 @@
+/* share */
+.heading-share{
+  display: flex;
+  align-items: baseline;
+}
+.robot-share{
+  width: 28px; height: 39px;
+  transform: translateY(2px);
+  filter: invert(20%) sepia(55%) saturate(3647%) hue-rotate(196deg) brightness(70%) contrast(98%);
+}
+.heading-share h3{
+  font-size: 40px; 
+  font-weight: 600;
+  color: #025AAB;
+}
+
+.fa-plus{
+  transition: .3s;
+}
+.fa-plus:hover{
+  color: #1264B0;
+}
