@@ -1,0 +1,85 @@
+/* tab_head */
+.notice_tab_head{
+  display: flex; 
+  margin-top: 26px; 
+  height: 66px; 
+  background-color: #ECF0F3; 
+  border-radius: var(--bdradius);
+}
+.notice_tab_head li a{
+  display: block;
+  text-decoration: none;
+  color: #014A8F;
+  font-size: 24px;
+  width: 282px; height: 66px;
+  text-align: center;
+  line-height: 66px;
+  position: relative;
+}
+
+/* active */
+.notice_tab_head li a.active{
+  border-radius: var(--bdradius);
+  background-color: #3689D7;
+  color: #fff;
+  font-weight: 600;
+}
+
+.notice_tab_head a.active::after{
+  content: '';
+  border-top: 14px solid #3689D7;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 0px solid transparent;
+  position: absolute;
+  top: 66px;
+  left: 131px;
+}
+
+/* tab_content */
+#tab_content{margin-top: 31px;}
+#tab_content>div{display: none;} /* 탭 처음 상태 */
+#tab_content>div:nth-child(1){display: block;} /* 무조건 1번이 보이게 */
+
+#tab_content .tab ul{
+  border-bottom: 1px dashed #A7A9AC;
+  display: flex;
+}
+#tab_content .tab ul li{margin: 16px 0;}
+#tab_content .tab ul li:first-child{
+  width: 580px; 
+  text-align: left; 
+  margin-left: 32px;
+  margin-right: 18px;
+}
+#tab_content .tab ul li:last-child{
+  width: 211px;
+  text-align: right;
+  margin-right: 32px;
+}
+#tab_content .tab ul li a{
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#tab_content .tab ul li a:hover{text-decoration: underline;}
+/* 최신 내용 */
+#tab_content .tab ul li a strong{
+  font-size: 24px;
+  font-weight: 600;
+  color: #025AAB;
+}
+#tab_content .tab ul li a strong::before{
+  content: '\e9a8';
+  font-family: xeicon;
+  font-size: 22px;
+}
+
+#tab_content .tab ul li a p{
+  font-size: 16px;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+}
